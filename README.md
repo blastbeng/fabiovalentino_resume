@@ -69,6 +69,14 @@ static assets are cached for 7 days. The certificate must cover both the apex an
 `fabiovalentino.it` was removed from `default.conf` so the default page no longer
 wins. `www` redirects permanently to the apex.
 
+Response headers are set in `deploy/fabiovalentino.it.conf` (HSTS one year,
+`nosniff`, `SAMEORIGIN`, strict referrer, empty permissions policy, and a
+`default-src 'self'` CSP which allows only same-origin scripts plus inline
+`style="--p:…"` custom properties). Keep CSP and markup in sync: a new inline
+handler, remote font or third-party script needs a matching directive. OCSP
+stapling is deliberately absent — Let's Encrypt certificates no longer carry an
+OCSP responder URI, so `ssl_stapling` would be dead configuration.
+
 ## Links
 
 - GitHub — https://github.com/blastbeng
