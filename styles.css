@@ -728,7 +728,9 @@ a { color: inherit; }
   }
   .nav.open { opacity: 1; visibility: visible; transform: none; }
   .nav a { padding: 11px 14px; }
-  .header-inner { position: relative; }
+  .header-inner { position: relative; gap: 12px; }
+  .brand-text { display: none; }
+  .lang-switch button { padding: 5px 9px; }
 
   .stats { grid-template-columns: 1fr; }
   .strengths { grid-template-columns: 1fr; }

@@ -54,7 +54,9 @@ scp index.html styles.css script.js i18n.js favicon.svg \
 ssh root@<host> 'chown -R 1000:1000 /storage/docker/configs/swag/www/fabiovalentino.it'
 ```
 
-Static files need no nginx reload. The certificate must cover both the apex and
+Static files need no nginx reload. Asset URLs carry a cache-busting query
+(`styles.css?v=…`): bump it in `index.html` whenever CSS or JS changes, since
+static assets are cached for 7 days. The certificate must cover both the apex and
 `www` (`EXTRA_DOMAINS` in the SWAG stack), and the `server_name` for
 `fabiovalentino.it` was removed from `default.conf` so the default page no longer
 wins. `www` redirects permanently to the apex.
