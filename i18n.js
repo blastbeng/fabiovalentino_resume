@@ -37,7 +37,7 @@
 
     "profile.kicker": "01 — Profilo",
     "profile.title": "Chi sono",
-    "profile.p1": "Sono un developer con oltre quattordici anni di esperienza nella costruzione di software per il settore bancario e industriale. Ho lavorato su tutto il ciclo di vita del software: analisi dei requisiti, redazione di documentazione funzionale, sviluppo backend e frontend, integrazione continua e rapporti con i fornitori.",
+    "profile.p1": "Sono un developer con oltre <span data-experience-years>15</span> anni di esperienza nella costruzione di software per il settore bancario e industriale. Ho lavorato su tutto il ciclo di vita del software: analisi dei requisiti, redazione di documentazione funzionale, sviluppo backend e frontend, integrazione continua e rapporti con i fornitori.",
     "profile.p2": "Oggi, in Intesa Sanpaolo, mi occupo di microservizi e procedure batch che lavorano su grandi volumi di dati, tra Google Cloud, BigQuery, PostgreSQL e Teradata. Nel tempo ho mantenuto la stessa abitudine: imparare in fretta, scavare a fondo, lasciare il codice un po' più ordinato di come l'ho trovato.",
     "profile.factsAria": "In sintesi",
 

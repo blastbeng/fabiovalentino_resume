@@ -69,8 +69,25 @@
     revealables.forEach((el) => observer.observe(el));
   }
 
+  /* Experience years: current year minus the first job start (2011) */
+  const FIRST_EXPERIENCE_YEAR = 2011;
+  const experienceYears = Math.max(0, new Date().getFullYear() - FIRST_EXPERIENCE_YEAR);
+
+  const renderExperienceYears = () => {
+    document.querySelectorAll("[data-experience-years]").forEach((node) => {
+      node.textContent = String(experienceYears);
+    });
+  };
+
+  renderExperienceYears();
+  document.addEventListener("fv:langchange", renderExperienceYears);
+
   /* Count-up for the hero statistic */
   const counter = document.querySelector("[data-count]");
+  if (counter) {
+    counter.dataset.count = String(experienceYears);
+    counter.textContent = String(experienceYears);
+  }
   if (counter && !reduceMotion && "IntersectionObserver" in window) {
     const target = Number(counter.dataset.count) || 0;
     counter.textContent = "0";
