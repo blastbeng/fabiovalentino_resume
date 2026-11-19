@@ -129,7 +129,7 @@
     "edu.1.place": "Torino, Italia",
     "edu.2.title": "Cisco IT Essentials",
     "edu.2.place": "Immaginazione e Lavoro, Torino",
-    "edu.3.title": "Diploma di istruzione secondaria in Informatica",
+    "edu.3.title": "Diploma di scuola superiore in Informatica",
     "edu.3.place": "ITIS Pininfarina, Moncalieri",
 
     "lang.title": "Lingue",
