@@ -52,7 +52,7 @@
     "facts.passions.value": "Linux e self-hosting",
     "facts.passions.sub": "Server personali, automazione, homelab",
     "facts.languages.label": "Lingue",
-    "facts.languages.value": "Italiano · Inglese C1",
+    "facts.languages.value": "Italiano · Inglese C1 · Coreano ~A1",
     "facts.languages.sub": "Uso professionale quotidiano",
     "facts.online.label": "Online",
     "facts.online.sub": "Progetti personali e profilo professionale",
@@ -141,6 +141,8 @@
     "lang.speaking": "Produzione orale",
     "lang.interaction": "Interazione",
     "lang.writing": "Scrittura",
+    "lang.korean": "Coreano",
+    "lang.koreanNote": "Leggo l'hangul e conosco parecchi vocaboli; grammatica e frasi complesse sono ancora in lavorazione.",
 
     "contact.kicker": "06 — Contatti",
     "contact.title": "Parliamone.",
