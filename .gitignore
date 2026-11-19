@@ -3,3 +3,4 @@ Thumbs.db
 *.bak
 *.bak-*
 node_modules/
+.aider*
