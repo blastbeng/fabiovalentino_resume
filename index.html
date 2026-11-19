@@ -16,7 +16,7 @@
   <meta property="og:url" content="https://fabiovalentino.it/">
   <link rel="canonical" href="https://fabiovalentino.it/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261119e">
+  <link rel="stylesheet" href="styles.css?v=20261119f">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -477,12 +477,33 @@
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <p>© <span id="year">2026</span> Fabio Valentino</p>
-      <p class="muted" data-i18n="footer.note">Hand-made, no framework.</p>
+      <p class="muted footer-note">
+        <span data-i18n="footer.note">Hand-made, no framework.</span>
+        <button type="button" class="link-button" data-cookie-open data-i18n="cookie.link">Cookie preferences</button>
+      </p>
       <a class="to-top" href="#top" aria-label="Top" data-i18n-aria-label="a11y.top">↑</a>
     </div>
   </footer>
 
-  <script src="i18n.js?v=20261119e" defer></script>
-  <script src="script.js?v=20261119e" defer></script>
+  <aside class="cookie-banner" data-cookie-banner hidden aria-labelledby="cookie-title">
+    <p class="cookie-title" id="cookie-title" data-i18n="cookie.title">Cookies</p>
+    <p class="cookie-body" data-i18n="cookie.body">
+      This site uses only technical storage: your language and this acknowledgement.
+      No tracking, profiling or third-party cookies.
+    </p>
+    <details class="cookie-details">
+      <summary data-i18n="cookie.details">What is stored</summary>
+      <ul>
+        <li data-i18n="cookie.item1"><code>fv-lang</code> — your language, kept until you clear the browser data.</li>
+        <li data-i18n="cookie.item2"><code>fv-consent</code> — this acknowledgement, kept until you clear the browser data.</li>
+      </ul>
+    </details>
+    <div class="cookie-actions">
+      <button type="button" class="btn btn-primary btn-sm" data-cookie-accept data-i18n="cookie.accept">Accept</button>
+    </div>
+  </aside>
+
+  <script src="i18n.js?v=20261119f" defer></script>
+  <script src="script.js?v=20261119f" defer></script>
 </body>
 </html>

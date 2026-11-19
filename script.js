@@ -117,4 +117,50 @@
   /* Footer year */
   const year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
+
+  /* Cookie banner: the site stores only technical data, so one acknowledgement */
+  const consentKey = "fv-consent";
+  const banner = document.querySelector("[data-cookie-banner]");
+
+  if (banner) {
+    const reserve = () => {
+      document.body.style.paddingBottom = banner.hidden ? "" : `${banner.offsetHeight + 32}px`;
+    };
+
+    const show = () => {
+      banner.hidden = false;
+      reserve();
+    };
+
+    const hide = () => {
+      banner.hidden = true;
+      reserve();
+    };
+
+    const stored = (() => {
+      try { return localStorage.getItem(consentKey); } catch (e) { return null; }
+    })();
+
+    if (!stored) show();
+
+    banner.querySelectorAll("[data-cookie-accept]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        try {
+          localStorage.setItem(consentKey, JSON.stringify({ accepted: true, at: new Date().toISOString() }));
+        } catch (e) { /* private mode: the banner simply shows again next time */ }
+        hide();
+      });
+    });
+
+    document.querySelectorAll("[data-cookie-open]").forEach((el) => {
+      el.addEventListener("click", (event) => {
+        event.preventDefault();
+        show();
+      });
+    });
+
+    window.addEventListener("resize", reserve);
+    document.addEventListener("fv:langchange", reserve);
+    banner.querySelectorAll("details").forEach((details) => details.addEventListener("toggle", reserve));
+  }
 })();

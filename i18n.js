@@ -149,6 +149,14 @@
     "contact.lede": "Per una collaborazione, una proposta o semplicemente per scambiare due righe su un progetto.",
     "contact.location": "Torino, Italia",
 
+    "cookie.title": "Cookie",
+    "cookie.body": "Questo sito usa solo memoria tecnica: la lingua scelta e questa presa d'atto. Nessun cookie di tracciamento, profilazione o di terze parti.",
+    "cookie.details": "Cosa viene salvato",
+    "cookie.item1": "<code>fv-lang</code> — la lingua scelta, conservata finché non cancelli i dati del browser.",
+    "cookie.item2": "<code>fv-consent</code> — questa presa d'atto, conservata finché non cancelli i dati del browser.",
+    "cookie.accept": "Accetta",
+    "cookie.link": "Preferenze cookie",
+
     "footer.note": "Fatto a mano, senza framework.",
 
     "meta.title": "Fabio Valentino — Developer &amp; Data Engineer",
@@ -297,6 +305,14 @@
     "contact.title": "이야기해 봅시다.",
     "contact.lede": "협업 제안이나 프로젝트에 대한 이야기를 나누고 싶다면 언제든 연락 주세요.",
     "contact.location": "이탈리아 토리노",
+
+    "cookie.title": "쿠키",
+    "cookie.body": "이 사이트는 선택한 언어와 이 확인 여부만 기술적으로 저장합니다. 추적, 프로파일링, 제3자 쿠키는 사용하지 않습니다.",
+    "cookie.details": "저장되는 항목",
+    "cookie.item1": "<code>fv-lang</code> — 선택한 언어. 브라우저 데이터를 지울 때까지 유지됩니다.",
+    "cookie.item2": "<code>fv-consent</code> — 이 확인 여부. 브라우저 데이터를 지울 때까지 유지됩니다.",
+    "cookie.accept": "동의합니다",
+    "cookie.link": "쿠키 설정",
 
     "footer.note": "프레임워크 없이 직접 만들었습니다.",
 

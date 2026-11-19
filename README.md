@@ -6,6 +6,13 @@ Static single-page portfolio for **Fabio Valentino**, served by [SWAG](https://g
 - **Live:** https://fabiovalentino.it
 - **Trilingual:** English by default, Italian and Korean via the `EN / IT / KO` switch in the header
 - **No build step:** plain HTML, CSS and vanilla JavaScript
+- **Cookie notice:** bottom banner, `localStorage["fv-consent"]`, reopenable from the footer
+
+## Storage
+
+The site sets no cookies. Two `localStorage` keys are used: `fv-lang` (language
+choice) and `fv-consent` (cookie notice accepted). Both are technical, so the
+notice is a single acknowledgement — there is nothing non-essential to refuse.
 
 ## Content
 
