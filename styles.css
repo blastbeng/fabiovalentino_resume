@@ -19,7 +19,7 @@
   --radius-sm: 12px;
   --shadow: 0 24px 60px -30px rgba(2, 6, 23, 0.9);
   --maxw: 1120px;
-  --font: "Inter", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font: "Inter", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", Arial, sans-serif;
   --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 }
 
@@ -43,6 +43,13 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
+
+/* Korean: keep words intact when wrapping, a touch more leading, tighter tracking. */
+html[lang="ko"] { word-break: keep-all; }
+html[lang="ko"] body { line-height: 1.75; }
+html[lang="ko"] .kicker { letter-spacing: 0.06em; }
+/* Korean reads "15년 이상", so the "+" is dropped */
+html[lang="ko"] .stat .plus { display: none; }
 
 img, svg { display: block; max-width: 100%; }
 

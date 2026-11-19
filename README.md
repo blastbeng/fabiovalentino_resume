@@ -4,7 +4,7 @@ Static single-page portfolio for **Fabio Valentino**, served by [SWAG](https://g
 (nginx) on a self-hosted Docker host.
 
 - **Live:** https://fabiovalentino.it
-- **Bilingual:** English by default, Italian via the `EN / IT` switch in the header
+- **Trilingual:** English by default, Italian and Korean via the `EN / IT / KO` switch in the header
 - **No build step:** plain HTML, CSS and vanilla JavaScript
 
 ## Content
@@ -20,10 +20,11 @@ phone number is **not** published.
 
 - `index.html` contains the English text and marks every translatable node with
   `data-i18n`, `data-i18n-aria-label`, `data-i18n-title` or `data-i18n-content`.
-- `i18n.js` holds the Italian dictionary, captures the English source at load and
-  swaps text, ARIA labels, `title`/`meta description` and JSON-LD.
-- Resolution order for the initial language: `?lang=it` → `localStorage["fv-lang"]`
-  → `en`. The choice is persisted and `document.documentElement.lang` is updated.
+- `i18n.js` holds the Italian and Korean dictionaries, captures the English source
+  at load and swaps text, ARIA labels, `title`/`meta description` and JSON-LD.
+- Resolution order for the initial language: `?lang=it` / `?lang=ko` →
+  `localStorage["fv-lang"]` → `en`. The choice is persisted and
+  `document.documentElement.lang` is updated.
 - A `fv:langchange` event is dispatched on `<html>` after each switch.
 
 ## Files
@@ -33,7 +34,7 @@ phone number is **not** published.
 | `index.html` | Markup, English copy, JSON-LD `Person`, meta/OpenGraph |
 | `styles.css` | Dark glass theme, responsive layout, print styles |
 | `script.js` | Header state, mobile nav, scroll reveal, counters |
-| `i18n.js` | Italian dictionary and language switch logic |
+| `i18n.js` | Italian and Korean dictionaries, language switch logic |
 | `favicon.svg` | Monogram favicon |
 | `deploy/fabiovalentino.it.conf` | nginx server block used by SWAG |
 
