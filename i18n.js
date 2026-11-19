@@ -19,6 +19,7 @@
     "nav.profile": "Profilo",
     "nav.experience": "Esperienza",
     "nav.skills": "Competenze",
+    "nav.beyond": "Oltre",
     "nav.education": "Formazione",
     "nav.contact": "Contatti",
 
@@ -31,9 +32,9 @@
     "stats.experience": "Esperienza",
     "stats.years": "anni",
     "stats.focus": "Focus",
-    "stats.focus.value": "Big Data &amp; Cloud",
+    "stats.focus.value": "Programmazione e architettura",
     "stats.stack": "Stack",
-    "stats.stack.value": "Java · Python · Angular",
+    "stats.stack.value": "Python · Node · Rust · Java",
 
     "profile.kicker": "01 — Profilo",
     "profile.title": "Chi sono",
@@ -113,7 +114,16 @@
     "strength.3.title": "Lavoro di squadra",
     "strength.3.body": "Esperienza come referente tecnico e coordinatore di piccoli gruppi, abituato al confronto con colleghi e fornitori.",
 
-    "edu.kicker": "04 — Formazione",
+    "beyond.kicker": "04 — Oltre il lavoro",
+    "beyond.title": "Quello che ho imparato da solo",
+    "beyond.1.title": "Linguaggi oltre il lavoro",
+    "beyond.1.body": "Oltre a Java, ho imparato da solo altri linguaggi e paradigmi — Python, Rust, Node.js e Bash — costruendo strumenti, automazioni e piccoli servizi. Imparo partendo da un problema reale e risolvendolo come si deve.",
+    "beyond.2.title": "Linux e reti",
+    "beyond.2.body": "Linux è il mio ambiente quotidiano: shell e systemd, container, reverse proxy, DNS, routing, VPN e servizi self-hosted sul mio hardware. Mi interessa capire cosa succede sotto il livello applicativo.",
+    "beyond.3.title": "La sicurezza come approccio",
+    "beyond.3.body": "Studio sicurezza informatica e la metto in pratica: hardening, privilegio minimo, segmentazione di rete, gestione dei segreti e analisi delle vulnerabilità, con OWASP come riferimento. Guardo ogni sistema chiedendomi come può fallire e chi potrebbe volerlo far fallire.",
+
+    "edu.kicker": "05 — Formazione",
     "edu.title": "Studi e certificazioni",
     "edu.1.title": "Oracle Certified Associate — Java SE 7 Programmer",
     "edu.1.place": "Torino, Italia",
@@ -132,7 +142,7 @@
     "lang.interaction": "Interazione",
     "lang.writing": "Scrittura",
 
-    "contact.kicker": "05 — Contatti",
+    "contact.kicker": "06 — Contatti",
     "contact.title": "Parliamone.",
     "contact.lede": "Per una collaborazione, una proposta o semplicemente per scambiare due righe su un progetto.",
     "contact.location": "Torino, Italia",

@@ -15,7 +15,7 @@
   <meta property="og:url" content="https://fabiovalentino.it/">
   <link rel="canonical" href="https://fabiovalentino.it/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261119">
+  <link rel="stylesheet" href="styles.css?v=20261119b">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -34,7 +34,7 @@
       "addressLocality": "Torino",
       "addressCountry": "IT"
     },
-    "knowsAbout": ["Java", "Python", "Angular", "Spring", "BigQuery", "Google Cloud", "PostgreSQL", "Docker", "Linux"]
+    "knowsAbout": ["Java", "Python", "Rust", "Node.js", "Angular", "Spring", "BigQuery", "Google Cloud", "PostgreSQL", "Docker", "Linux", "Networking", "Cybersecurity"]
   }
   </script>
 </head>
@@ -58,6 +58,7 @@
         <a href="#profile" data-i18n="nav.profile">Profile</a>
         <a href="#experience" data-i18n="nav.experience">Experience</a>
         <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#beyond" data-i18n="nav.beyond">Beyond</a>
         <a href="#education" data-i18n="nav.education">Education</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
@@ -99,11 +100,11 @@
           </div>
           <div class="stat">
             <dt data-i18n="stats.focus">Focus</dt>
-            <dd data-i18n="stats.focus.value">Big Data &amp; Cloud</dd>
+            <dd data-i18n="stats.focus.value">Programming &amp; architecture</dd>
           </div>
           <div class="stat">
             <dt data-i18n="stats.stack">Stack</dt>
-            <dd data-i18n="stats.stack.value">Java · Python · Angular</dd>
+            <dd data-i18n="stats.stack.value">Python · Node · Rust · Java</dd>
           </div>
         </dl>
       </div>
@@ -318,7 +319,7 @@
           <article class="card skill reveal">
             <h3><span class="skill-ico" aria-hidden="true">&lt;/&gt;</span> <span data-i18n="skills.languages">Languages</span></h3>
             <ul class="tags">
-              <li>Java</li><li>Python</li><li>JavaScript</li><li>SQL</li><li>Bash / Unix</li>
+              <li>Python</li><li>Java</li><li>Rust</li><li>JavaScript / Node</li><li>SQL</li><li>Bash / Unix</li>
             </ul>
           </article>
           <article class="card skill reveal">
@@ -358,10 +359,43 @@
       </div>
     </section>
 
+    <section id="beyond" class="section" aria-labelledby="beyond-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker" data-i18n="beyond.kicker">04 — Beyond work</p>
+          <h2 id="beyond-title" data-i18n="beyond.title">What I learned on my own</h2>
+        </header>
+
+        <div class="strengths">
+          <article class="card soft reveal">
+            <h3 data-i18n="beyond.1.title">Languages beyond the job</h3>
+            <p data-i18n="beyond.1.body">Beyond Java, I taught myself other languages and paradigms — Python, Rust, Node.js and Bash — building tools, automations and small services. I learn by taking a real problem and solving it properly.</p>
+            <ul class="tags" aria-label="Technologies" data-i18n-aria-label="a11y.technologies">
+              <li>Python</li><li>Rust</li><li>Node.js</li><li>Bash</li>
+            </ul>
+          </article>
+          <article class="card soft reveal">
+            <h3 data-i18n="beyond.2.title">Linux and networks</h3>
+            <p data-i18n="beyond.2.body">Linux is my daily environment: shell and systemd, containers, reverse proxies, DNS, routing, VPNs and self-hosted services on my own hardware. I want to understand what happens below the application layer.</p>
+            <ul class="tags" aria-label="Technologies" data-i18n-aria-label="a11y.technologies">
+              <li>Linux</li><li>Docker</li><li>Nginx</li><li>WireGuard</li><li>DNS</li><li>TCP/IP</li><li>Homelab</li>
+            </ul>
+          </article>
+          <article class="card soft reveal">
+            <h3 data-i18n="beyond.3.title">Security as a mindset</h3>
+            <p data-i18n="beyond.3.body">I study information security and put it into practice: hardening, least privilege, network segmentation, secret management and vulnerability analysis, with OWASP as a reference. I look at every system asking how it can fail and who might want it to.</p>
+            <ul class="tags" aria-label="Technologies" data-i18n-aria-label="a11y.technologies">
+              <li>Hardening</li><li>OWASP Top 10</li><li>Threat modeling</li><li>Network security</li><li>Vulnerability analysis</li><li>Privacy</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="education" class="section" aria-labelledby="education-title">
       <div class="wrap">
         <header class="section-head">
-          <p class="kicker" data-i18n="edu.kicker">04 — Education</p>
+          <p class="kicker" data-i18n="edu.kicker">05 — Education</p>
           <h2 id="education-title" data-i18n="edu.title">Studies and certifications</h2>
         </header>
 
@@ -409,7 +443,7 @@
     <section id="contact" class="section section-contact" aria-labelledby="contact-title">
       <div class="wrap">
         <div class="contact-card reveal">
-          <p class="kicker" data-i18n="contact.kicker">05 — Contact</p>
+          <p class="kicker" data-i18n="contact.kicker">06 — Contact</p>
           <h2 id="contact-title" data-i18n="contact.title">Let's talk.</h2>
           <p class="contact-lede" data-i18n="contact.lede">For a collaboration, a proposal, or simply to exchange a couple of lines about a project.</p>
           <div class="contact-actions">
@@ -441,7 +475,7 @@
     </div>
   </footer>
 
-  <script src="i18n.js?v=20261119" defer></script>
-  <script src="script.js?v=20261119" defer></script>
+  <script src="i18n.js?v=20261119b" defer></script>
+  <script src="script.js?v=20261119b" defer></script>
 </body>
 </html>
